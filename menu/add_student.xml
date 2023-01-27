@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/navigation_add_student"
+            android:icon="@drawable/ic_add_circle"
+            android:title="Öğrenci Kaydı"/>
+
+    <item android:id="@+id/navigation_add_teacher"
+        android:title="Öğretmen Kaydı"/>
+
+    <item android:id="@+id/nav_logout_admin"
+        android:title="Çıkış Yap"/>
+
+</menu>
