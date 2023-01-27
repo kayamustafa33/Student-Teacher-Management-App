@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/avatarprofile"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arel Üniversitesi"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/textColor"></TextView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:visibility="invisible"
+                        android:id="@+id/deleteFeedNotice"
+                        android:layout_marginLeft="50dp"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton">
+
+                    </com.google.android.material.button.MaterialButton>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tarih: "
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/dateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 Ocak 2022"
+                        android:layout_marginStart="3dp"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saat: "
+                        android:layout_marginStart="3dp"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/timeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00"
+                        android:layout_marginStart="3dp"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noticeFeedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="buraya yazılıcak"
+            android:background="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="@dimen/text_margin"
+            android:padding="16dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/textColor"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/noticeFeedImage"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

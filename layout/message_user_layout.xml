@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    android:elevation="20dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#F9F6F0"
+    android:id="@+id/message_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatarprofile"/>
+
+        <TextView
+            android:id="@+id/usernameMessageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="50dp"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:text="UserName"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/messageImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_message"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="22dp"
+        android:visibility="invisible"/>
+
+
+</androidx.cardview.widget.CardView>
